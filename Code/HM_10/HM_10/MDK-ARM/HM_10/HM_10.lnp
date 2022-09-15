@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"hm_10\startup_stm32f103xb.o"
+"hm_10\main.o"
+"hm_10\stm32f1xx_it.o"
+"hm_10\stm32f1xx_hal_msp.o"
+"hm_10\stm32f1xx_hal_gpio_ex.o"
+"hm_10\stm32f1xx_hal_tim.o"
+"hm_10\stm32f1xx_hal_tim_ex.o"
+"hm_10\stm32f1xx_hal_uart.o"
+"hm_10\stm32f1xx_hal.o"
+"hm_10\stm32f1xx_hal_rcc.o"
+"hm_10\stm32f1xx_hal_rcc_ex.o"
+"hm_10\stm32f1xx_hal_gpio.o"
+"hm_10\stm32f1xx_hal_dma.o"
+"hm_10\stm32f1xx_hal_cortex.o"
+"hm_10\stm32f1xx_hal_pwr.o"
+"hm_10\stm32f1xx_hal_flash.o"
+"hm_10\stm32f1xx_hal_flash_ex.o"
+"hm_10\stm32f1xx_hal_exti.o"
+"hm_10\system_stm32f1xx.o"
+--strict --scatter "HM_10\HM_10.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "HM_10.map" -o HM_10\HM_10.axf
