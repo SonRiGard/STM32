@@ -1,0 +1,11 @@
+GY-80 9-Axis IMU-Magnetic-Acceleration-Gyroscope-Atmospheric Module - General Specifications
+
+L3G4200D 3-axis gyroscope
+
+ADXL345 3-axis accelerometer
+
+MC5883L 3-axis magnetometer
+
+BMP085 barometer – thermometer
+
+I2C interface
