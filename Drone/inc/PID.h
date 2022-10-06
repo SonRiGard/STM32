@@ -1,0 +1,13 @@
+#include "stm32f1xx_hal.h"
+#include <math.h>
+
+typedef struct
+{
+	float ampha , betal, gamma, delta;
+	int8_t u , u1;
+	float e , e1, e2;//error
+	float KP, KI, KD;		
+} PID_t;
+void parameter_calculation (PID_t *DataStruct);
+void setK (int KP, int KI, int KD, PID_t *DataStruct);
+void get_out (PID_t *DataStruct, int set_Angle, int current_Angle);
